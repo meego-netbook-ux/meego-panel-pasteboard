@@ -1,4 +1,4 @@
-themedir = $(pkgdatadir)/moblin-panel-pasteboard
+themedir = $(pkgdatadir)/theme
 dist_theme_DATA = \
 	panel.css \
 	pasteboard-delete-bg.png \
