@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-10 14:54-0700\n"
+"POT-Creation-Date: 2009-08-24 09:30+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Glscht_Wen <wen.hsinx.moh@intel.com>\n"
 "Language-Team: \n"
@@ -17,30 +18,30 @@ msgstr ""
 msgid "Copy"
 msgstr "複製"
 
-#: ../src/mnb-clipboard-view.c:40 ../src/moblin-panel-pasteboard.c:258
-msgid "You need to copy some text to use Pasteboard"
-msgstr "您必須複製一些文字來使用剪貼板"
-
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
-msgid "the current selection to pasteboard"
-msgstr "目前選項至剪貼板"
-
 #: ../src/moblin-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "選擇語言"
-
-#: ../src/moblin-panel-pasteboard.c:210
-msgid "Pasteboard"
-msgstr "剪貼板"
 
 #: ../src/moblin-panel-pasteboard.c:223
 msgid "Search"
 msgstr "搜尋"
 
+#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+msgid "the current selection to pasteboard"
+msgstr "目前選項至剪貼簿"
+
+#: ../src/moblin-panel-pasteboard.c:210
+msgid "Pasteboard"
+msgstr "剪貼簿"
+
 #: ../src/moblin-panel-pasteboard.c:312
 msgid "Clear pasteboard"
-msgstr "除剪貼板"
+msgstr "清除剪貼簿"
+
+#: ../src/moblin-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "您必須複製一些文字來使用剪貼簿"
 
 #: ../src/moblin-panel-pasteboard.c:444
 msgid "pasteboard"
-msgstr "剪貼板"
+msgstr "剪貼簿"
