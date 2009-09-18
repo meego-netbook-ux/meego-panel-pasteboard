@@ -240,8 +240,8 @@ make_pasteboard (gint           width,
   bin = NBTK_WIDGET (nbtk_bin_new ());
   nbtk_widget_set_style_class_name (bin, "pasteboard-empty-bin");
   nbtk_bin_set_alignment (NBTK_BIN (bin),
-                          NBTK_ALIGN_LEFT,
-                          NBTK_ALIGN_CENTER);
+                          NBTK_ALIGN_START,
+                          NBTK_ALIGN_MIDDLE);
   nbtk_bin_set_fill (NBTK_BIN (bin), TRUE, FALSE);
   nbtk_table_add_actor_with_properties (NBTK_TABLE (vbox), CLUTTER_ACTOR (bin),
                                         1, 0,
