@@ -41,7 +41,6 @@ MplEntry *.MplEntryButton {
 }
 
 *#pasteboard-controls {
-  font-family: "Droid Sans";
   border-image: url('file://pasteboard-items-list-bg.png') 10 stretch;
   padding: 12;
 }
