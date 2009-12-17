@@ -1,4 +1,4 @@
 # List of source files containing translatable strings.
 src/mnb-clipboard-item.c
 src/moblin-panel-pasteboard.c
-
+data/moblin-panel-pasteboard.desktop.in.in

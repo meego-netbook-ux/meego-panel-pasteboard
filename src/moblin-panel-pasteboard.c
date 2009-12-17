@@ -440,7 +440,7 @@ main (int    argc,
   if (!standalone)
     {
       ClutterActor *entry = NULL;
-      client = mpl_panel_clutter_new (MPL_PANEL_PASTEBOARD,
+      client = mpl_panel_clutter_new ("pasteboard",
                                       _("pasteboard"),
                                       NULL,
                                       "pasteboard-button",

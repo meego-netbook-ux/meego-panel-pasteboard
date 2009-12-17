@@ -23,7 +23,11 @@ AM_PROG_CC_C_O
 
 CFLAGS="$CFLAGS -Wall"
 
-PKG_CHECK_MODULES(MPL, moblin-panel)
+PKG_CHECK_MODULES(MPL, moblin-panel >= 0.50.0)
+
+MOBLIN_PANELS_DIR=`$PKG_CONFIG --variable=moblin_panel_panels_dir moblin-panel`
+AC_SUBST(MOBLIN_PANELS_DIR)
+
 PKG_CHECK_MODULES(PASTEBOARD,
                   clutter-x11-1.0
                   clutter-1.0
@@ -42,6 +46,14 @@ AS_IF([test "x$enable_cache" = "xyes"],
                 [nbtk-create-image-cache],
                 [$(which nbtk-create-image-cache)])
 ])
+
+AC_ARG_ENABLE([moblin-desktop-file],
+              [AC_HELP_STRING([--disable-moblin-desktop-file],
+                              [Disable installation of moblin desktop file])],
+              [enable_mdesktop=$enableval],
+              [enable_mdesktop=yes])
+
+AM_CONDITIONAL([ENABLE_MOBLIN_DESKTOP_FILE], [test "x$enable_mdesktop" = "xyes"])
 
 # glib-genmarshal
 GLIB_GENMARSHAL=`$PKG_CONFIG --variable=glib_genmarshal glib-2.0`
