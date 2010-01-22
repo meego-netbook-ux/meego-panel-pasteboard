@@ -3,47 +3,52 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: moblin-panel-pasteboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-10 14:54-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2009-10-16 11:31+0000\n"
+"PO-Revision-Date: 2010-01-22 12:08+0100\n"
+"Last-Translator: Gergely Lónyai <aleph@mandriva.org>\n"
+"Language-Team: Hungarian <aleph@mandriva.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/mnb-clipboard-item.c:248 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247
+#: ../src/moblin-panel-pasteboard.c:340
 msgid "Copy"
-msgstr ""
+msgstr "Másol"
 
-#: ../src/mnb-clipboard-view.c:40 ../src/moblin-panel-pasteboard.c:258
-msgid "You need to copy some text to use Pasteboard"
-msgstr ""
-
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+#: ../src/moblin-panel-pasteboard.c:140
+#: ../src/moblin-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
-msgstr ""
+msgstr "a kijelöléshez a vágólapra"
 
 #: ../src/moblin-panel-pasteboard.c:145
 msgid "your selection"
-msgstr ""
+msgstr "kiválasztás"
 
 #: ../src/moblin-panel-pasteboard.c:210
 msgid "Pasteboard"
-msgstr ""
+msgstr "Vágólap"
 
 #: ../src/moblin-panel-pasteboard.c:223
 msgid "Search"
-msgstr ""
+msgstr "Keresés"
+
+#: ../src/moblin-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "Másolnod kell a szöveget, ha szeretnéd használni a vágólapot."
 
 #: ../src/moblin-panel-pasteboard.c:312
 msgid "Clear pasteboard"
-msgstr ""
+msgstr "Vágólap ürítése"
 
 #: ../src/moblin-panel-pasteboard.c:444
 msgid "pasteboard"
-msgstr ""
+msgstr "vágólap"
+
