@@ -4,12 +4,12 @@
 # This file is distributed under the same license as the mutter-moblin package.
 # Li Jian <jian.li@turbolinux.com.cn>, 2009.
 # Zhu Yanhai <yanhai.zhu@linux.intel.com>, 2009
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.27.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-10 14:54-0700\n"
+"POT-Creation-Date: 2010-02-26 02:54+0000\n"
 "PO-Revision-Date: 2009-07-25 23:46+0800\n"
 "Last-Translator: Li Jian <jian.li@turbolinux.com.cn>\n"
 "Language-Team: Chinese (simplified)\n"
@@ -17,13 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/mnb-clipboard-item.c:248 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "拷贝"
-
-#: ../src/mnb-clipboard-view.c:40 ../src/moblin-panel-pasteboard.c:258
-msgid "You need to copy some text to use Pasteboard"
-msgstr "您要先复制一些文字才能使用粘贴板"
 
 #: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
@@ -41,10 +37,19 @@ msgstr "粘贴板"
 msgid "Search"
 msgstr "搜索"
 
+#: ../src/moblin-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "您要先复制一些文字才能使用粘贴板"
+
 #: ../src/moblin-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "清空粘贴板"
 
 #: ../src/moblin-panel-pasteboard.c:444
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
+msgstr "粘贴板"
+
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
 msgstr "粘贴板"
