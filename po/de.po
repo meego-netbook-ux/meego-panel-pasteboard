@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-19 09:29+0000\n"
+"POT-Creation-Date: 2010-02-26 03:48+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Tomás Galicia <tomas.galicia@intel.com>\n"
 "Language-Team: \n"
@@ -14,13 +15,11 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 # assuming this is the text in the button...
-#: ../src/mnb-clipboard-item.c:248
-#: ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Kopiere"
 
-#: ../src/moblin-panel-pasteboard.c:140
-#: ../src/moblin-panel-pasteboard.c:355
+#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "die aktuelle Auswahl in die Zwischenablage"
 
@@ -45,6 +44,10 @@ msgid "Clear pasteboard"
 msgstr "Zwischenablage leeren"
 
 #: ../src/moblin-panel-pasteboard.c:444
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "Zwischenablage"
 
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr "Panel Zwischenablage"
