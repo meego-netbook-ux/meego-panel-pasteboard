@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-15 09:11+0000\n"
-"PO-Revision-Date: 2009-11-08 20:48+0800\n"
+"POT-Creation-Date: 2010-02-26 03:48+0000\n"
+"PO-Revision-Date: 2010-02-26 16:15+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: 正體中文 <>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: ../src/mnb-clipboard-item.c:248
+#: ../src/mnb-clipboard-item.c:247
 #: ../src/moblin-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "複製"
@@ -47,7 +47,11 @@ msgid "Clear pasteboard"
 msgstr "清除剪貼簿"
 
 #: ../src/moblin-panel-pasteboard.c:444
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "剪貼簿"
 
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr "剪貼簿面板"
 
