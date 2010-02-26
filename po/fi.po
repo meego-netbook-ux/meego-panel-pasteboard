@@ -1,25 +1,22 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-10 14:54-0700\n"
+"POT-Creation-Date: 2010-02-26 03:48+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: GLS <tomas.galicia@intel.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
 "X-Poedit-Language: Finnish\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
 
-#: ../src/mnb-clipboard-item.c:248 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Kopioi"
-
-#: ../src/mnb-clipboard-view.c:40 ../src/moblin-panel-pasteboard.c:258
-msgid "You need to copy some text to use Pasteboard"
-msgstr "Kopioi jotain tekstiä, jotta voisit käyttää liitepöytää"
 
 #: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
@@ -37,10 +34,19 @@ msgstr "Liitepöytä"
 msgid "Search"
 msgstr "Etsi"
 
+#: ../src/moblin-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "Kopioi jotain tekstiä, jotta voisit käyttää liitepöytää"
+
 #: ../src/moblin-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Tyhjennä liitepöytä"
 
 #: ../src/moblin-panel-pasteboard.c:444
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "liitepöytä"
+
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr "Taittopöydän paneeli"
