@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Moblin UX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-10 14:54-0700\n"
+"POT-Creation-Date: 2010-03-01 10:36+0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Tomás Galicia <tomas.galicia@intel.com>\n"
+"Last-Translator: Gonzalo <gonzalo.velasquez@ptiglobal.net>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12,16 +12,13 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/mnb-clipboard-item.c:248 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247
+#: ../src/moblin-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Copiar"
 
-# you have to copy some text to be able to paste it in the pasteboard
-#: ../src/mnb-clipboard-view.c:40 ../src/moblin-panel-pasteboard.c:258
-msgid "You need to copy some text to use Pasteboard"
-msgstr "Debes copiar algún texto para poder pegarlo en el borrador"
-
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+#: ../src/moblin-panel-pasteboard.c:140
+#: ../src/moblin-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "lo seleccionado al borrador"
 
@@ -37,6 +34,11 @@ msgstr "Borrador"
 msgid "Search"
 msgstr "Búsqueda"
 
+# you have to copy some text to be able to paste it in the pasteboard
+#: ../src/moblin-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "Debes copiar algún texto para poder pegarlo en el borrador"
+
 # clean the pasteboard
 #: ../src/moblin-panel-pasteboard.c:312
 msgid "Clear pasteboard"
@@ -45,5 +47,11 @@ msgstr "Limpiar el borrador"
 # <not sure about this. sent question to developers>
 # draft
 #: ../src/moblin-panel-pasteboard.c:444
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "borrador"
+
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr "Borrador"
+
