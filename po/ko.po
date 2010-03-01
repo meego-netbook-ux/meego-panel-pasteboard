@@ -1,8 +1,9 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-10 14:54-0700\n"
+"POT-Creation-Date: 2010-03-01 10:36+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: GLSKOR_SunKim <sunx.kim@intel.com>\n"
 "Language-Team: \n"
@@ -13,13 +14,9 @@ msgstr ""
 "X-Poedit-Language: Korean\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/mnb-clipboard-item.c:248 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "복사"
-
-#: ../src/mnb-clipboard-view.c:40 ../src/moblin-panel-pasteboard.c:258
-msgid "You need to copy some text to use Pasteboard"
-msgstr "임시 보드 사용을 위해 텍스트를 복사해야 합니다."
 
 #: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
@@ -37,10 +34,19 @@ msgstr "임시 보드"
 msgid "Search"
 msgstr "검색"
 
+#: ../src/moblin-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "임시 보드 사용을 위해 텍스트를 복사해야 합니다."
+
 #: ../src/moblin-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "임시 보드 지우기"
 
 #: ../src/moblin-panel-pasteboard.c:444
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "임시 보드"
+
+#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr "판지 패널"
