@@ -20,7 +20,7 @@
 #ifndef __MNB_CLIPBOARD_VIEW_H__
 #define __MNB_CLIPBOARD_VIEW_H__
 
-#include <nbtk/nbtk.h>
+#include <mx/mx.h>
 #include "mnb-clipboard-store.h"
 
 G_BEGIN_DECLS
@@ -38,19 +38,19 @@ typedef struct _MnbClipboardViewClass           MnbClipboardViewClass;
 
 struct _MnbClipboardView
 {
-  NbtkBoxLayout parent_instance;
+  MxBoxLayout parent_instance;
 
   MnbClipboardViewPrivate *priv;
 };
 
 struct _MnbClipboardViewClass
 {
-  NbtkBoxLayoutClass parent_class;
+  MxBoxLayoutClass parent_class;
 };
 
 GType mnb_clipboard_view_get_type (void) G_GNUC_CONST;
 
-NbtkWidget *mnb_clipboard_view_new (MnbClipboardStore *store);
+MxWidget *mnb_clipboard_view_new (MnbClipboardStore *store);
 
 MnbClipboardStore *mnb_clipboard_view_get_store (MnbClipboardView *view);
 

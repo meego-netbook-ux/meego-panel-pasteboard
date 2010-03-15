@@ -45,19 +45,19 @@ enum
   LAST_SIGNAL
 };
 
-G_DEFINE_TYPE (MnbClipboardItem, mnb_clipboard_item, NBTK_TYPE_TABLE);
+G_DEFINE_TYPE (MnbClipboardItem, mnb_clipboard_item, MX_TYPE_TABLE);
 
 static guint item_signals[LAST_SIGNAL] = { 0, };
 
 static void
-on_remove_clicked (NbtkButton *button,
+on_remove_clicked (MxButton *button,
                    MnbClipboardItem *self)
 {
   g_signal_emit (self, item_signals[REMOVE_CLICKED], 0);
 }
 
 static void
-on_action_clicked (NbtkButton *button,
+on_action_clicked (MxButton *button,
                    MnbClipboardItem *self)
 {
   g_signal_emit (self, item_signals[ACTION_CLICKED], 0);
@@ -69,7 +69,7 @@ mnb_clipboard_item_enter (ClutterActor *actor,
 {
   MnbClipboardItem *item = MNB_CLIPBOARD_ITEM (actor);
 
-  nbtk_widget_set_style_pseudo_class (NBTK_WIDGET (actor), "hover");
+  mx_stylable_set_style_pseudo_class (MX_STYLABLE (actor), "hover");
 
   clutter_actor_show (item->remove_button);
 
@@ -82,7 +82,7 @@ mnb_clipboard_item_leave (ClutterActor *actor,
 {
   MnbClipboardItem *item = MNB_CLIPBOARD_ITEM (actor);
 
-  nbtk_widget_set_style_pseudo_class (NBTK_WIDGET (actor), "hover");
+  mx_stylable_set_style_pseudo_class (MX_STYLABLE (actor), "hover");
 
   clutter_actor_hide (item->remove_button);
 
@@ -100,7 +100,7 @@ mnb_clipboard_item_set_property (GObject      *gobject,
   switch (prop_id)
     {
     case PROP_CONTENTS:
-      nbtk_label_set_text (NBTK_LABEL (self->contents),
+      mx_label_set_text (MX_LABEL (self->contents),
                            g_value_get_string (value));
       break;
 
@@ -185,23 +185,23 @@ mnb_clipboard_item_class_init (MnbClipboardItemClass *klass)
 static void
 mnb_clipboard_item_init (MnbClipboardItem *self)
 {
-  NbtkTable *table = NBTK_TABLE (self);
+  MxTable *table = MX_TABLE (self);
   ClutterActor *text;
   ClutterTexture *texture;
-  NbtkTextureCache *texture_cache;
+  MxTextureCache *texture_cache;
   gchar *remove_icon_path;
 
   clutter_actor_set_width (CLUTTER_ACTOR (self), 600);
   clutter_actor_set_reactive (CLUTTER_ACTOR (self), TRUE);
 
-  nbtk_table_set_row_spacing (table, 2);
-  nbtk_table_set_col_spacing (table, 6);
+  mx_table_set_row_spacing (table, 2);
+  mx_table_set_col_spacing (table, 6);
 
-  self->contents = CLUTTER_ACTOR (nbtk_label_new (""));
-  text = nbtk_label_get_clutter_text (NBTK_LABEL (self->contents));
+  self->contents = CLUTTER_ACTOR (mx_label_new (""));
+  text = mx_label_get_clutter_text (MX_LABEL (self->contents));
   clutter_text_set_line_wrap (CLUTTER_TEXT (text), TRUE);
   clutter_text_set_ellipsize (CLUTTER_TEXT (text), PANGO_ELLIPSIZE_NONE);
-  nbtk_table_add_actor_with_properties (table, self->contents,
+  mx_table_add_actor_with_properties (table, self->contents,
                                         0, 0,
                                         "x-expand", TRUE,
                                         "y-expand", TRUE,
@@ -211,15 +211,15 @@ mnb_clipboard_item_init (MnbClipboardItem *self)
                                         "y-align", 0.0,
                                         NULL);
 
-  self->remove_button = CLUTTER_ACTOR (nbtk_button_new ());
-  nbtk_widget_set_style_class_name (NBTK_WIDGET (self->remove_button),
+  self->remove_button = CLUTTER_ACTOR (mx_button_new ());
+  mx_stylable_set_style_class (MX_STYLABLE (self->remove_button),
                                     "MnbClipboardItemDeleteButton");
   clutter_actor_set_reactive (self->remove_button, TRUE);
   clutter_actor_hide (self->remove_button);
   g_signal_connect (self->remove_button, "clicked",
                     G_CALLBACK (on_remove_clicked),
                     self);
-  nbtk_table_add_actor_with_properties (table, self->remove_button,
+  mx_table_add_actor_with_properties (table, self->remove_button,
                                         0, 1,
                                         "x-expand", FALSE,
                                         "y-expand", TRUE,
@@ -234,24 +234,24 @@ mnb_clipboard_item_init (MnbClipboardItem *self)
                                        "pasteboard-item-delete-hover.png",
                                        NULL);
 
-  texture_cache = nbtk_texture_cache_get_default ();
-  texture = nbtk_texture_cache_get_texture (texture_cache,
+  texture_cache = mx_texture_cache_get_default ();
+  texture = mx_texture_cache_get_texture (texture_cache,
                                             remove_icon_path);
   if (texture != NULL)
-    nbtk_bin_set_child (NBTK_BIN (self->remove_button),
+    mx_bin_set_child (MX_BIN (self->remove_button),
                         CLUTTER_ACTOR (texture));
 
   g_free (remove_icon_path);
 
-  self->action_button = CLUTTER_ACTOR (nbtk_button_new ());
-  nbtk_button_set_label (NBTK_BUTTON (self->action_button), _("Copy"));
-  nbtk_widget_set_style_class_name (NBTK_WIDGET (self->action_button),
+  self->action_button = CLUTTER_ACTOR (mx_button_new ());
+  mx_button_set_label (MX_BUTTON (self->action_button), _("Copy"));
+  mx_stylable_set_style_class (MX_STYLABLE (self->action_button),
                                     "MnbClipboardItemCopyButton");
   clutter_actor_set_reactive (self->action_button, TRUE);
   g_signal_connect (self->action_button, "clicked",
                     G_CALLBACK (on_action_clicked),
                     self);
-  nbtk_table_add_actor_with_properties (table, self->action_button,
+  mx_table_add_actor_with_properties (table, self->action_button,
                                         1, 0,
                                         "x-expand", FALSE,
                                         "y-expand", FALSE,
@@ -267,7 +267,7 @@ mnb_clipboard_item_get_contents (MnbClipboardItem *item)
 {
   g_return_val_if_fail (MNB_IS_CLIPBOARD_ITEM (item), NULL);
 
-  return nbtk_label_get_text (NBTK_LABEL (item->contents));
+  return mx_label_get_text (MX_LABEL (item->contents));
 }
 
 G_CONST_RETURN gchar *
@@ -279,7 +279,7 @@ mnb_clipboard_item_get_filter_contents (MnbClipboardItem *item)
     {
       const gchar *contents;
 
-      contents = nbtk_label_get_text (NBTK_LABEL (item->contents));
+      contents = mx_label_get_text (MX_LABEL (item->contents));
       item->filter_contents = g_utf8_strdown (contents, -1);
     }
 

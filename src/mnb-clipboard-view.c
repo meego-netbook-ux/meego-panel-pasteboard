@@ -56,7 +56,7 @@ enum
   PROP_STORE
 };
 
-G_DEFINE_TYPE (MnbClipboardView, mnb_clipboard_view, NBTK_TYPE_BOX_LAYOUT);
+G_DEFINE_TYPE (MnbClipboardView, mnb_clipboard_view, MX_TYPE_BOX_LAYOUT);
 
 static void
 on_action_clicked (MnbClipboardItem *item,
@@ -200,32 +200,32 @@ on_store_item_added (MnbClipboardStore    *store,
  *  - paint the first row with a different background color
  *  - paint the children
  *
- * so: KEEP IN SYNC WITH NbtkBoxLayout::paint
+ * so: KEEP IN SYNC WITH MxBoxLayout::paint
  */
 static void
 mnb_clipboard_view_paint (ClutterActor *actor)
 {
-  NbtkAdjustment *h_adjustment, *v_adjustment;
+  MxAdjustment *h_adjustment, *v_adjustment;
   ClutterActorBox box_b;
   GList *children, *l;
   gdouble x, y;
 
   h_adjustment = v_adjustment = NULL;
-  nbtk_scrollable_get_adjustments (NBTK_SCROLLABLE (actor),
+  mx_scrollable_get_adjustments (MX_SCROLLABLE (actor),
                                    &h_adjustment,
                                    &v_adjustment);
 
   if (h_adjustment)
-    x = nbtk_adjustment_get_value (h_adjustment);
+    x = mx_adjustment_get_value (h_adjustment);
   else
     x = 0;
 
   if (v_adjustment)
-    y = nbtk_adjustment_get_value (v_adjustment);
+    y = mx_adjustment_get_value (v_adjustment);
   else
     y = 0;
 
-  nbtk_widget_draw_background (NBTK_WIDGET (actor));
+  mx_widget_paint_background (MX_WIDGET (actor));
 
   clutter_actor_get_allocation_box (actor, &box_b);
   box_b.x2 = (box_b.x2 - box_b.x1) + x;
@@ -375,12 +375,12 @@ mnb_clipboard_view_init (MnbClipboardView *view)
 {
   view->priv = MNB_CLIPBOARD_VIEW_GET_PRIVATE (view);
 
-  nbtk_box_layout_set_vertical (NBTK_BOX_LAYOUT (view), TRUE);
-  nbtk_box_layout_set_pack_start (NBTK_BOX_LAYOUT (view), TRUE);
-  nbtk_box_layout_set_spacing (NBTK_BOX_LAYOUT (view), 2);
+  mx_box_layout_set_vertical (MX_BOX_LAYOUT (view), TRUE);
+  mx_box_layout_set_pack_start (MX_BOX_LAYOUT (view), TRUE);
+  mx_box_layout_set_spacing (MX_BOX_LAYOUT (view), 2);
 }
 
-NbtkWidget *
+MxWidget *
 mnb_clipboard_view_new (MnbClipboardStore *store)
 {
   g_return_val_if_fail (store == NULL || MNB_IS_CLIPBOARD_STORE (store), NULL);

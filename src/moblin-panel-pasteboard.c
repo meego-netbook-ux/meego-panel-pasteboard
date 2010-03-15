@@ -32,7 +32,7 @@
 #include <clutter/x11/clutter-x11.h>
 #include <gdk/gdkx.h>
 #include <gtk/gtk.h>
-#include <nbtk/nbtk.h>
+#include <mx/mx.h>
 #include <moblin-panel/mpl-panel-clutter.h>
 #include <moblin-panel/mpl-panel-common.h>
 #include <moblin-panel/mpl-entry.h>
@@ -125,7 +125,7 @@ on_search_activated (MplEntry *entry,
 }
 
 static void
-on_clear_clicked (NbtkButton *button,
+on_clear_clicked (MxButton *button,
                   gpointer    dummy G_GNUC_UNUSED)
 {
   mnb_clipboard_store_clear (MNB_CLIPBOARD_STORE (store));
@@ -134,10 +134,10 @@ on_clear_clicked (NbtkButton *button,
 static void
 on_selection_changed (MnbClipboardStore *store,
                       const gchar       *current_selection,
-                      NbtkLabel         *label)
+                      MxLabel         *label)
 {
   if (current_selection == NULL || *current_selection == '\0')
-    nbtk_label_set_text (label, _("the current selection to pasteboard"));
+    mx_label_set_text (label, _("the current selection to pasteboard"));
   else
     {
       gchar *text;
@@ -145,14 +145,14 @@ on_selection_changed (MnbClipboardStore *store,
       text = g_strconcat (_("your selection"),
                           " \"", current_selection, "\"",
                           NULL);
-      nbtk_label_set_text (label, text);
+      mx_label_set_text (label, text);
 
       g_free (text);
     }
 }
 
 static void
-on_selection_copy_clicked (NbtkButton *button,
+on_selection_copy_clicked (MxButton *button,
                            gpointer    dummy G_GNUC_UNUSED)
 {
   mnb_clipboard_store_save_selection (store);
@@ -178,23 +178,23 @@ static ClutterActor *
 make_pasteboard (gint           width,
                  ClutterActor **entry_out)
 {
-  NbtkWidget *vbox, *hbox, *label, *entry, *bin, *button;
+  ClutterActor *vbox, *hbox, *label, *entry, *bin, *button;
   ClutterActor *view, *scroll;
   ClutterText *text;
 
   /* the object proxying the Clipboard changes and storing them */
   store = mnb_clipboard_store_new ();
 
-  vbox = nbtk_table_new ();
-  nbtk_table_set_col_spacing (NBTK_TABLE (vbox), 12);
-  nbtk_table_set_row_spacing (NBTK_TABLE (vbox), 6);
+  vbox = mx_table_new ();
+  mx_table_set_col_spacing (MX_TABLE (vbox), 12);
+  mx_table_set_row_spacing (MX_TABLE (vbox), 6);
   clutter_actor_set_name (CLUTTER_ACTOR (vbox), "pasteboard-vbox");
 
   /* Filter row. */
-  hbox = nbtk_table_new ();
+  hbox = mx_table_new ();
   clutter_actor_set_name (CLUTTER_ACTOR (hbox), "pasteboard-search");
-  nbtk_table_set_col_spacing (NBTK_TABLE (hbox), 20);
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (vbox),
+  mx_table_set_col_spacing (MX_TABLE (hbox), 20);
+  mx_table_add_actor_with_properties (MX_TABLE (vbox),
                                         CLUTTER_ACTOR (hbox),
                                         0, 0,
                                         "row-span", 1,
@@ -207,9 +207,9 @@ make_pasteboard (gint           width,
                                         "y-align", 0.0,
                                         NULL);
 
-  label = nbtk_label_new (_("Pasteboard"));
+  label = mx_label_new (_("Pasteboard"));
   clutter_actor_set_name (CLUTTER_ACTOR (label), "pasteboard-search-label");
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (hbox),
+  mx_table_add_actor_with_properties (MX_TABLE (hbox),
                                         CLUTTER_ACTOR (label),
                                         0, 0,
                                         "x-expand", FALSE,
@@ -220,10 +220,10 @@ make_pasteboard (gint           width,
                                         "y-align", 0.5,
                                         NULL);
 
-  entry = mpl_entry_new (_("Search"));
+  entry = (ClutterActor *)mpl_entry_new (_("Search"));
   clutter_actor_set_name (CLUTTER_ACTOR (entry), "pasteboard-search-entry");
   clutter_actor_set_width (CLUTTER_ACTOR (entry), 600);
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (hbox),
+  mx_table_add_actor_with_properties (MX_TABLE (hbox),
                                         CLUTTER_ACTOR (entry),
                                         0, 1,
                                         "x-expand", FALSE,
@@ -237,13 +237,13 @@ make_pasteboard (gint           width,
     *entry_out = CLUTTER_ACTOR (entry);
 
   /* bin for the the "pasteboard is empty" notice */
-  bin = NBTK_WIDGET (nbtk_bin_new ());
-  nbtk_widget_set_style_class_name (bin, "pasteboard-empty-bin");
-  nbtk_bin_set_alignment (NBTK_BIN (bin),
-                          NBTK_ALIGN_START,
-                          NBTK_ALIGN_MIDDLE);
-  nbtk_bin_set_fill (NBTK_BIN (bin), TRUE, FALSE);
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (vbox), CLUTTER_ACTOR (bin),
+  bin = mx_frame_new ();
+  mx_stylable_set_style_class (MX_STYLABLE (bin), "pasteboard-empty-bin");
+  mx_bin_set_alignment (MX_BIN (bin),
+                          MX_ALIGN_START,
+                          MX_ALIGN_MIDDLE);
+  mx_bin_set_fill (MX_BIN (bin), TRUE, FALSE);
+  mx_table_add_actor_with_properties (MX_TABLE (vbox), CLUTTER_ACTOR (bin),
                                         1, 0,
                                         "x-expand", TRUE,
                                         "y-expand", FALSE,
@@ -255,8 +255,8 @@ make_pasteboard (gint           width,
                                         "col-span", 2,
                                         NULL);
 
-  label = nbtk_label_new (_("You need to copy some text to use Pasteboard"));
-  nbtk_widget_set_style_class_name (label, "pasteboard-empty-label");
+  label = mx_label_new (_("You need to copy some text to use Pasteboard"));
+  mx_stylable_set_style_class (MX_STYLABLE (label), "pasteboard-empty-label");
   clutter_container_add_actor (CLUTTER_CONTAINER (bin),
                                CLUTTER_ACTOR (label));
 
@@ -268,14 +268,14 @@ make_pasteboard (gint           width,
   view = CLUTTER_ACTOR (mnb_clipboard_view_new (store));
 
   /* the scroll view is bigger to avoid the horizontal scroll bar */
-  scroll = CLUTTER_ACTOR (nbtk_scroll_view_new ());
+  scroll = CLUTTER_ACTOR (mx_scroll_view_new ());
   clutter_container_add_actor (CLUTTER_CONTAINER (scroll), view);
 
-  bin = NBTK_WIDGET (nbtk_bin_new ());
+  bin = mx_frame_new ();
   clutter_actor_set_name (CLUTTER_ACTOR (bin), "pasteboard-items-list");
   g_object_set (bin, "y-fill", TRUE, "x-fill", TRUE, NULL);
   clutter_container_add_actor (CLUTTER_CONTAINER (bin), scroll);
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (vbox),
+  mx_table_add_actor_with_properties (MX_TABLE (vbox),
                                         CLUTTER_ACTOR (bin),
                                         2, 0,
                                         "x-expand", TRUE,
@@ -294,11 +294,11 @@ make_pasteboard (gint           width,
 
 
   /* side controls */
-  bin = nbtk_table_new ();
-  nbtk_table_set_row_spacing (NBTK_TABLE (bin), 12);
+  bin = mx_table_new ();
+  mx_table_set_row_spacing (MX_TABLE (bin), 12);
   clutter_actor_set_width (CLUTTER_ACTOR (bin), 300);
   clutter_actor_set_name (CLUTTER_ACTOR (bin), "pasteboard-controls");
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (vbox),
+  mx_table_add_actor_with_properties (MX_TABLE (vbox),
                                         CLUTTER_ACTOR (bin),
                                         2, 1,
                                         "x-expand", FALSE,
@@ -309,8 +309,8 @@ make_pasteboard (gint           width,
                                         "y-align", 0.0,
                                         NULL);
 
-  button = nbtk_button_new_with_label (_("Clear pasteboard"));
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (bin),
+  button = mx_button_new_with_label (_("Clear pasteboard"));
+  mx_table_add_actor_with_properties (MX_TABLE (bin),
                                         CLUTTER_ACTOR (button),
                                         0, 0,
                                         "x-expand", FALSE,
@@ -324,9 +324,9 @@ make_pasteboard (gint           width,
                     G_CALLBACK (on_clear_clicked),
                     NULL);
 
-  hbox = nbtk_table_new ();
-  nbtk_table_set_col_spacing (NBTK_TABLE (hbox), 6);
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (bin),
+  hbox = mx_table_new ();
+  mx_table_set_col_spacing (MX_TABLE (hbox), 6);
+  mx_table_add_actor_with_properties (MX_TABLE (bin),
                                         CLUTTER_ACTOR (hbox),
                                         1, 0,
                                         "x-expand", TRUE,
@@ -337,8 +337,8 @@ make_pasteboard (gint           width,
                                         "y-align", 0.0,
                                         NULL);
 
-  button = nbtk_button_new_with_label (_("Copy"));
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (hbox),
+  button = mx_button_new_with_label (_("Copy"));
+  mx_table_add_actor_with_properties (MX_TABLE (hbox),
                                         CLUTTER_ACTOR (button),
                                         0, 0,
                                         "x-expand", FALSE,
@@ -352,13 +352,13 @@ make_pasteboard (gint           width,
                     G_CALLBACK (on_selection_copy_clicked),
                     store);
 
-  label = nbtk_label_new (_("the current selection to pasteboard"));
-  text = CLUTTER_TEXT (nbtk_label_get_clutter_text (NBTK_LABEL (label)));
+  label = mx_label_new (_("the current selection to pasteboard"));
+  text = CLUTTER_TEXT (mx_label_get_clutter_text (MX_LABEL (label)));
   clutter_text_set_single_line_mode (text, FALSE);
   clutter_text_set_line_wrap (text, TRUE);
   clutter_text_set_line_wrap_mode (text, PANGO_WRAP_WORD_CHAR);
   clutter_text_set_ellipsize (text, PANGO_ELLIPSIZE_END);
-  nbtk_table_add_actor_with_properties (NBTK_TABLE (hbox),
+  mx_table_add_actor_with_properties (MX_TABLE (hbox),
                                         CLUTTER_ACTOR (label),
                                         0, 1,
                                         "x-expand", TRUE,
@@ -432,9 +432,9 @@ main (int    argc,
 
   MPL_PANEL_CLUTTER_INIT_WITH_GTK (&argc, &argv);
 
-  nbtk_texture_cache_load_cache (nbtk_texture_cache_get_default (),
-                                 NBTK_CACHE);
-  nbtk_style_load_from_file (nbtk_style_get_default (),
+  mx_texture_cache_load_cache (mx_texture_cache_get_default (),
+                                 MX_CACHE);
+  mx_style_load_from_file (mx_style_get_default (),
                              THEMEDIR "/panel.css", NULL);
 
   if (!standalone)

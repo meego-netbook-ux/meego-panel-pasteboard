@@ -4,7 +4,7 @@ AM_CFLAGS = \
 	$(PASTEBOARD_CFLAGS) \
 	$(MPL_CFLAGS) \
 	-DLOCALEDIR=\"$(localedir)\" \
-	-DNBTK_CACHE=\"$(pkgdatadir)/nbtk.cache\" \
+	-DMX_CACHE=\"$(pkgdatadir)/mx.cache\" \
 	-DTHEMEDIR=\"$(pkgdatadir)/theme\"
 
 libexec_PROGRAMS = moblin-panel-pasteboard

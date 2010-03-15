@@ -2,7 +2,7 @@
 /* Entry */
 
 MplEntry *.MplEntryButton {
-  color: #027061 !important; /* Override default color. */
+  color: #027061; /* Override default color. */
 }
 
 /* pasteboard */
@@ -13,7 +13,7 @@ MplEntry *.MplEntryButton {
 }
 
 *#pasteboard-search {
-  border-image: url('file://pasteboard-search-bg.png') 4 stretch;
+  border-image: url('pasteboard-search-bg.png') 4;
   padding: 4;
 }
 
@@ -25,7 +25,7 @@ MplEntry *.MplEntryButton {
 }
 
 *.pasteboard-empty-bin {
-  border-image: url('file://placeholder-bg.png') 4 stretch;
+  border-image: url('placeholder-bg.png') 4;
   padding: 8;
 }
 
@@ -36,13 +36,13 @@ MplEntry *.MplEntryButton {
 }
 
 *#pasteboard-items-list {
-  border-image: url('file://pasteboard-items-list-bg.png') 10 stretch;
+  border-image: url('pasteboard-items-list-bg.png') 10;
   padding: 10;
 }
 
 *#pasteboard-controls {
   font-family: "Droid Sans";
-  border-image: url('file://pasteboard-items-list-bg.png') 10 stretch;
+  border-image: url('pasteboard-items-list-bg.png') 10;
   padding: 12;
 }
 
@@ -51,7 +51,7 @@ MnbClipboardItem {
 }
 
 MnbClipboardItem > *.MnbClipboardItemDeleteButton {
-  border-image: url('file://pasteboard-delete-bg.png') 4 stretch;
+  border-image: url('pasteboard-delete-bg.png') 4;
   padding: 4;
 }
 

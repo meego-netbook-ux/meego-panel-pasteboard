@@ -20,7 +20,7 @@
 #ifndef __MNB_CLIPBOARD_ITEM_H__
 #define __MNB_CLIPBOARD_ITEM_H__
 
-#include <nbtk/nbtk.h>
+#include <mx/mx.h>
 
 G_BEGIN_DECLS
 
@@ -36,7 +36,7 @@ typedef struct _MnbClipboardItemClass           MnbClipboardItemClass;
 
 struct _MnbClipboardItem
 {
-  NbtkTable parent_instance;
+  MxTable parent_instance;
 
   ClutterActor *contents;
 
@@ -52,7 +52,7 @@ struct _MnbClipboardItem
 
 struct _MnbClipboardItemClass
 {
-  NbtkTableClass parent_class;
+  MxTableClass parent_class;
 
   void (* remove_clicked) (MnbClipboardItem *item);
   void (* action_clicked) (MnbClipboardItem *item);
