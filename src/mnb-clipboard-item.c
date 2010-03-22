@@ -195,9 +195,9 @@ mnb_clipboard_item_init (MnbClipboardItem *self)
   clutter_actor_set_reactive (CLUTTER_ACTOR (self), TRUE);
 
   mx_table_set_row_spacing (table, 2);
-  mx_table_set_col_spacing (table, 6);
+  mx_table_set_column_spacing (table, 6);
 
-  self->contents = CLUTTER_ACTOR (mx_label_new (""));
+  self->contents = CLUTTER_ACTOR (mx_label_new ());
   text = mx_label_get_clutter_text (MX_LABEL (self->contents));
   clutter_text_set_line_wrap (CLUTTER_TEXT (text), TRUE);
   clutter_text_set_ellipsize (CLUTTER_TEXT (text), PANGO_ELLIPSIZE_NONE);

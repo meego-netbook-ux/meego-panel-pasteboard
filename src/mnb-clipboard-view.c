@@ -183,7 +183,9 @@ on_store_item_added (MnbClipboardStore    *store,
     return;
 
   priv->rows = g_slist_prepend (priv->rows, row);
-  clutter_container_add_actor (CLUTTER_CONTAINER (view), CLUTTER_ACTOR (row));
+  mx_box_layout_add_actor (MX_BOX_LAYOUT (view),
+                           CLUTTER_ACTOR (row),
+                           0);
 
   for (l = priv->rows; l != NULL; l = l->next)
     {
@@ -375,8 +377,7 @@ mnb_clipboard_view_init (MnbClipboardView *view)
 {
   view->priv = MNB_CLIPBOARD_VIEW_GET_PRIVATE (view);
 
-  mx_box_layout_set_vertical (MX_BOX_LAYOUT (view), TRUE);
-  mx_box_layout_set_pack_start (MX_BOX_LAYOUT (view), TRUE);
+  mx_box_layout_set_orientation (MX_BOX_LAYOUT (view), MX_ORIENTATION_VERTICAL);
   mx_box_layout_set_spacing (MX_BOX_LAYOUT (view), 2);
 }
 

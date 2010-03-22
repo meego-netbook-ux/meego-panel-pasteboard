@@ -186,19 +186,19 @@ make_pasteboard (gint           width,
   store = mnb_clipboard_store_new ();
 
   vbox = mx_table_new ();
-  mx_table_set_col_spacing (MX_TABLE (vbox), 12);
+  mx_table_set_column_spacing (MX_TABLE (vbox), 12);
   mx_table_set_row_spacing (MX_TABLE (vbox), 6);
   clutter_actor_set_name (CLUTTER_ACTOR (vbox), "pasteboard-vbox");
 
   /* Filter row. */
   hbox = mx_table_new ();
   clutter_actor_set_name (CLUTTER_ACTOR (hbox), "pasteboard-search");
-  mx_table_set_col_spacing (MX_TABLE (hbox), 20);
+  mx_table_set_column_spacing (MX_TABLE (hbox), 20);
   mx_table_add_actor_with_properties (MX_TABLE (vbox),
                                         CLUTTER_ACTOR (hbox),
                                         0, 0,
                                         "row-span", 1,
-                                        "col-span", 2,
+                                        "column-span", 2,
                                         "x-expand", TRUE,
                                         "y-expand", FALSE,
                                         "x-fill", TRUE,
@@ -207,7 +207,7 @@ make_pasteboard (gint           width,
                                         "y-align", 0.0,
                                         NULL);
 
-  label = mx_label_new (_("Pasteboard"));
+  label = mx_label_new_with_text (_("Pasteboard"));
   clutter_actor_set_name (CLUTTER_ACTOR (label), "pasteboard-search-label");
   mx_table_add_actor_with_properties (MX_TABLE (hbox),
                                         CLUTTER_ACTOR (label),
@@ -252,10 +252,10 @@ make_pasteboard (gint           width,
                                         "x-align", 0.0,
                                         "y-align", 0.0,
                                         "row-span", 1,
-                                        "col-span", 2,
+                                        "column-span", 2,
                                         NULL);
 
-  label = mx_label_new (_("You need to copy some text to use Pasteboard"));
+  label = mx_label_new_with_text (_("You need to copy some text to use Pasteboard"));
   mx_stylable_set_style_class (MX_STYLABLE (label), "pasteboard-empty-label");
   clutter_container_add_actor (CLUTTER_CONTAINER (bin),
                                CLUTTER_ACTOR (label));
@@ -325,7 +325,7 @@ make_pasteboard (gint           width,
                     NULL);
 
   hbox = mx_table_new ();
-  mx_table_set_col_spacing (MX_TABLE (hbox), 6);
+  mx_table_set_column_spacing (MX_TABLE (hbox), 6);
   mx_table_add_actor_with_properties (MX_TABLE (bin),
                                         CLUTTER_ACTOR (hbox),
                                         1, 0,
@@ -352,7 +352,7 @@ make_pasteboard (gint           width,
                     G_CALLBACK (on_selection_copy_clicked),
                     store);
 
-  label = mx_label_new (_("the current selection to pasteboard"));
+  label = mx_label_new_with_text (_("the current selection to pasteboard"));
   text = CLUTTER_TEXT (mx_label_get_clutter_text (MX_LABEL (label)));
   clutter_text_set_single_line_mode (text, FALSE);
   clutter_text_set_line_wrap (text, TRUE);
