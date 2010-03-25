@@ -32,7 +32,7 @@ PKG_CHECK_MODULES(PASTEBOARD,
                   clutter-x11-1.0
                   clutter-1.0
                   gtk+-2.0
-                  mx-1.0)
+                  mx-1.0 >= 0.9.0)
 
 AC_ARG_ENABLE([cache],
               [AC_HELP_STRING([--enable-cache],
