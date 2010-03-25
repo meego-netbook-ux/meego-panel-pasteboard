@@ -203,8 +203,8 @@ make_pasteboard (gint           width,
                                         "y-expand", FALSE,
                                         "x-fill", TRUE,
                                         "y-fill", TRUE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         NULL);
 
   label = mx_label_new_with_text (_("Pasteboard"));
@@ -216,8 +216,8 @@ make_pasteboard (gint           width,
                                         "y-expand", FALSE,
                                         "x-fill", FALSE,
                                         "y-fill", FALSE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.5,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_MIDDLE,
                                         NULL);
 
   entry = (ClutterActor *)mpl_entry_new (_("Search"));
@@ -230,8 +230,8 @@ make_pasteboard (gint           width,
                                         "y-expand", FALSE,
                                         "x-fill", FALSE,
                                         "y-fill", FALSE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.5,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_MIDDLE,
                                         NULL);
   if (entry_out)
     *entry_out = CLUTTER_ACTOR (entry);
@@ -249,8 +249,8 @@ make_pasteboard (gint           width,
                                         "y-expand", FALSE,
                                         "x-fill", TRUE,
                                         "y-fill", TRUE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         "row-span", 1,
                                         "column-span", 2,
                                         NULL);
@@ -282,8 +282,8 @@ make_pasteboard (gint           width,
                                         "y-expand", TRUE,
                                         "x-fill", TRUE,
                                         "y-fill", TRUE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         NULL);
 
   /* hook up the search entry to the view */
@@ -305,8 +305,8 @@ make_pasteboard (gint           width,
                                         "y-expand", FALSE,
                                         "x-fill", FALSE,
                                         "y-fill", FALSE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         NULL);
 
   button = mx_button_new_with_label (_("Clear pasteboard"));
@@ -317,8 +317,8 @@ make_pasteboard (gint           width,
                                         "y-expand", FALSE,
                                         "x-fill", FALSE,
                                         "y-fill", FALSE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         NULL);
   g_signal_connect (button, "clicked",
                     G_CALLBACK (on_clear_clicked),
@@ -333,8 +333,8 @@ make_pasteboard (gint           width,
                                         "y-expand", TRUE,
                                         "x-fill", TRUE,
                                         "y-fill", TRUE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         NULL);
 
   button = mx_button_new_with_label (_("Copy"));
@@ -345,8 +345,8 @@ make_pasteboard (gint           width,
                                         "y-expand", FALSE,
                                         "x-fill", FALSE,
                                         "y-fill", FALSE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         NULL);
   g_signal_connect (button, "clicked",
                     G_CALLBACK (on_selection_copy_clicked),
@@ -365,8 +365,8 @@ make_pasteboard (gint           width,
                                         "y-expand", FALSE,
                                         "x-fill", TRUE,
                                         "y-fill", FALSE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.5,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_MIDDLE,
                                         NULL);
 
   g_signal_connect (store, "selection-changed",

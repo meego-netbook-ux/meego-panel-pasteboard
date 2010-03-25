@@ -207,8 +207,8 @@ mnb_clipboard_item_init (MnbClipboardItem *self)
                                         "y-expand", TRUE,
                                         "x-fill", TRUE,
                                         "y-fill", TRUE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         NULL);
 
   self->remove_button = CLUTTER_ACTOR (mx_button_new ());
@@ -225,8 +225,8 @@ mnb_clipboard_item_init (MnbClipboardItem *self)
                                         "y-expand", TRUE,
                                         "x-fill", FALSE,
                                         "y-fill", TRUE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.0,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_START,
                                         "row-span", 2,
                                         NULL);
 
@@ -257,8 +257,8 @@ mnb_clipboard_item_init (MnbClipboardItem *self)
                                         "y-expand", FALSE,
                                         "x-fill", FALSE,
                                         "y-fill", FALSE,
-                                        "x-align", 0.0,
-                                        "y-align", 0.5,
+                                        "x-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_MIDDLE,
                                         NULL);
 }
 
