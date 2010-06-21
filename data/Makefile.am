@@ -2,16 +2,16 @@ SUBDIRS=theme
 
 @INTLTOOL_DESKTOP_RULE@
 
-desktopfiles_in_files=moblin-panel-pasteboard.desktop.in
+desktopfiles_in_files=meego-panel-pasteboard.desktop.in
 desktopfiles_files=$(desktopfiles_in_files:.desktop.in=.desktop)
 
-if ENABLE_MOBLIN_DESKTOP_FILE
-desktopfilesdir=$(MOBLIN_PANELS_DIR)/
+if ENABLE_MEEGO_DESKTOP_FILE
+desktopfilesdir=$(MEEGO_PANELS_DIR)/
 desktopfiles_DATA = $(desktopfiles_files)
 endif
 
 %.desktop.in: %.desktop.in.in Makefile
 	$(QUIET_GEN)sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 
-EXTRA_DIST = moblin-panel-pasteboard.desktop.in.in
-CLEANFILES = moblin-panel-pasteboard.desktop moblin-panel-pasteboard.desktop.in
+EXTRA_DIST = meego-panel-pasteboard.desktop.in.in
+CLEANFILES = meego-panel-pasteboard.desktop meego-panel-pasteboard.desktop.in

@@ -1,13 +1,13 @@
-# Dutch translation of mutter-moblin.
-# Copyright (C) 2009 THE mutter-moblin'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mutter-moblin package.
+# Dutch translation of mutter-meego.
+# Copyright (C) 2009 THE mutter-meego'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the mutter-meego package.
 # Auke Kok <auke-jan.h.kok@intel.com>, 2009.
 # , fuzzy
 #
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mutter-moblin moblin2\n"
+"Project-Id-Version: mutter-meego meego2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-02-27 10:45+0000\n"
 "PO-Revision-Date: 2010-02-27 22:56-0800\n"
@@ -18,42 +18,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/mnb-clipboard-item.c:247
-#: ../src/moblin-panel-pasteboard.c:340
+#: ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Kopieer"
 
-#: ../src/moblin-panel-pasteboard.c:140
-#: ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140
+#: ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "de selectie naar het plakbord"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "jouw selectie"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "plakbord"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "Zoek"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Je moet iets kopieeren om het plakbord te gebruiken"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Wis plakbord"
 
 # wees consistent, andere vertaling gebruiken allemaal "plakbord", niet "prikbord"
-#: ../src/moblin-panel-pasteboard.c:444
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "plakbord"
 
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Plakbord-paneel"
 

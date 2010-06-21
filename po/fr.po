@@ -14,41 +14,41 @@ msgstr ""
 "X-Poedit-Language: French\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Copier"
 
 # Is there a concatenation here?
 # This is displayed next to the "Copy" button.
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "la sélection actuelle vers la table de montage"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "votre sélection"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "Table de montage"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "Rechercher"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Vous devez copier du texte pour utiliser la table de montage"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Effacer la table de montage"
 
-#: ../src/moblin-panel-pasteboard.c:444
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "table de montage"
 
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Panneau de table de montage"

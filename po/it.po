@@ -1,11 +1,11 @@
-# Italian translations for mutter-moblin package.
-# Copyright (C) 2009 mutter-moblin's copyright holder.
-# This file is distributed under the same license as the mutter-moblin package.
+# Italian translations for mutter-meego package.
+# Copyright (C) 2009 mutter-meego's copyright holder.
+# This file is distributed under the same license as the mutter-meego package.
 # Milo Casagrande <milo@ubuntu.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: mutter-moblin\n"
+"Project-Id-Version: mutter-meego\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-02-26 03:48+0000\n"
 "PO-Revision-Date: 2010-02-26 11:35+0100\n"
@@ -18,44 +18,44 @@ msgstr ""
 
 # (ndt) pulsante
 #: ../src/mnb-clipboard-item.c:247
-#: ../src/moblin-panel-pasteboard.c:340
+#: ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Copia"
 
-#: ../src/moblin-panel-pasteboard.c:140
-#: ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140
+#: ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "la selezione corrente negli appunti"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "la selezione personale"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "Appunti"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "Cerca"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "È necessario copiare del testo per usare Appunti"
 
 # (ndt) pulsante
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Pulisci appunti"
 
 # (ndt) se io seleziono del testo, faccio Ctrl-C
 # tale testo compare in questa bella applicazione
-#: ../src/moblin-panel-pasteboard.c:444
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "appunti"
 
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Pannello appunti"
 

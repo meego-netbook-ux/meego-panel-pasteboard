@@ -1,11 +1,11 @@
-# Thai locale for moblin-panel-pasteboard
+# Thai locale for meego-panel-pasteboard
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Anuchit Chalothorn <anoochit@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: moblin-panel-pasteboard\n"
+"Project-Id-Version: meego-panel-pasteboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-19 09:29+0000\n"
 "PO-Revision-Date: 2009-08-19 14:20+0700\n"
@@ -17,34 +17,34 @@ msgstr ""
 "X-Poedit-Language: Thai\n"
 "X-Poedit-Country: THAILAND\n"
 
-#: ../src/mnb-clipboard-item.c:248 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:248 ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "คัดลอก"
 
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "เลือกไปยังเพสต์บอร์ด"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "การเลือกของคุณ"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "เพสต์บอร์ด"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "ค้นหา"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "คุณต้องคัดลอกข้อความเพื่อใช้เพสต์บอร์ด"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "ล้างเพสต์บอร์ด"
 
-#: ../src/moblin-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:444
 msgid "pasteboard"
 msgstr "เพสต์บอร์ด"

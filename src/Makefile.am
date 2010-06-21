@@ -7,11 +7,11 @@ AM_CFLAGS = \
 	-DMX_CACHE=\"$(pkgdatadir)/mx.cache\" \
 	-DTHEMEDIR=\"$(pkgdatadir)/theme\"
 
-libexec_PROGRAMS = moblin-panel-pasteboard
+libexec_PROGRAMS = meego-panel-pasteboard
 
-moblin_panel_pasteboard_LDADD = $(PASTEBOARD_LIBS) $(MPL_LIBS)
+meego_panel_pasteboard_LDADD = $(PASTEBOARD_LIBS) $(MPL_LIBS)
 
-moblin_panel_pasteboard_SOURCES = 	\
+meego_panel_pasteboard_SOURCES = 	\
 	$(BUILT_SOURCES) 		\
 	mnb-clipboard-item.c 		\
 	mnb-clipboard-item.h 		\
@@ -19,11 +19,11 @@ moblin_panel_pasteboard_SOURCES = 	\
 	mnb-clipboard-store.h 		\
 	mnb-clipboard-view.c 		\
 	mnb-clipboard-view.h 		\
-	moblin-panel-pasteboard.c
+	meego-panel-pasteboard.c
 
 servicedir = $(datadir)/dbus-1/services
-service_in_files = org.moblin.UX.Shell.Panels.pasteboard.service.in
-service_DATA = org.moblin.UX.Shell.Panels.pasteboard.service
+service_in_files = org.meego.UX.Shell.Panels.pasteboard.service.in
+service_DATA = org.meego.UX.Shell.Panels.pasteboard.service
 
 BUILT_SOURCES = \
 	mnb-pasteboard-marshal.c \
@@ -34,13 +34,13 @@ CLEANFILES = \
 	stamp-mnb-pasteboard-marshal.h
 
 DISTCLEANFILES = \
-	org.moblin.UX.Shell.Panels.pasteboard.service
+	org.meego.UX.Shell.Panels.pasteboard.service
 
 EXTRA_DIST = \
 	$(service_in_files) \
 	mnb-pasteboard-marshal.list
 
-org.moblin.UX.Shell.Panels.pasteboard.service: org.moblin.UX.Shell.Panels.pasteboard.service.in $(top_builddir)/config.log
+org.meego.UX.Shell.Panels.pasteboard.service: org.meego.UX.Shell.Panels.pasteboard.service.in $(top_builddir)/config.log
 	$(QUIET_GEN)sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 
 mnb-pasteboard-marshal.h: stamp-mnb-pasteboard-marshal.h

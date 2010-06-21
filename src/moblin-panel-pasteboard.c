@@ -33,9 +33,9 @@
 #include <gdk/gdkx.h>
 #include <gtk/gtk.h>
 #include <mx/mx.h>
-#include <moblin-panel/mpl-panel-clutter.h>
-#include <moblin-panel/mpl-panel-common.h>
-#include <moblin-panel/mpl-entry.h>
+#include <meego-panel/mpl-panel-clutter.h>
+#include <meego-panel/mpl-panel-common.h>
+#include <meego-panel/mpl-entry.h>
 
 #include "mnb-clipboard-store.h"
 #include "mnb-clipboard-view.h"
@@ -398,7 +398,7 @@ static GOptionEntry entries[] = {
     "standalone", 's',
     0,
     G_OPTION_ARG_NONE, &standalone,
-    "Do not embed into the mutter-moblin panel", NULL
+    "Do not embed into the mutter-meego panel", NULL
   },
 
   { NULL }
@@ -418,7 +418,7 @@ main (int    argc,
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
 
-  context = g_option_context_new ("- mutter-moblin pasteboard panel");
+  context = g_option_context_new ("- mutter-meego pasteboard panel");
   g_option_context_add_main_entries (context, entries, GETTEXT_PACKAGE);
   g_option_context_add_group (context, clutter_get_option_group_without_init ());
   g_option_context_add_group (context, gtk_get_option_group (FALSE));

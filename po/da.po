@@ -1,11 +1,11 @@
-# Danish translation moblin-panel-pasteboard
+# Danish translation meego-panel-pasteboard
 # Copyright (C) 2009
-# This file is distributed under the same license as the moblin-panel-pasteboard package.
+# This file is distributed under the same license as the meego-panel-pasteboard package.
 # Kris Thomsen <lakristho@gmail.com>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: moblin-panel-pasteboard\n"
+"Project-Id-Version: meego-panel-pasteboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-16 11:31+0000\n"
 "PO-Revision-Date: 2009-11-06 00:53+0100\n"
@@ -15,34 +15,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Kopiér"
 
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "den nuværende markering til klippebord"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "din markering"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "Klippebord"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "Søg"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Du skal kopiere noget tekst for at bruge klippebordet"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Ryd klippebord"
 
-#: ../src/moblin-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:444
 msgid "pasteboard"
 msgstr "klippebord"

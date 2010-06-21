@@ -16,35 +16,35 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Copiar"
 
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "a selección ao portarretallos"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "a súa selección"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "Portarretallos"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "Procurar"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Hai que copiar algo de texto para empregar o portarretallos"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Limpar o portarretallos"
 
-#: ../src/moblin-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:444
 msgid "pasteboard"
 msgstr "portarretallos"
 

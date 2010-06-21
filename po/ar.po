@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: moblin-panel-pasteboard\n"
+"Project-Id-Version: meego-panel-pasteboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-16 11:31+0000\n"
 "PO-Revision-Date: 2009-11-13 23:12+0200\n"
@@ -17,36 +17,36 @@ msgstr ""
 "X-Poedit-Language: Arabic\n"
 
 #: ../src/mnb-clipboard-item.c:247
-#: ../src/moblin-panel-pasteboard.c:340
+#: ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "نسخ"
 
-#: ../src/moblin-panel-pasteboard.c:140
-#: ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140
+#: ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "المحدد الحالي للوح اللصق"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "اختيارك"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "بيست بورد"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "بحث"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "تحتاج لنسخ نص معين لتستعمل لوح اللصق"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "نظف لوح اللصق"
 
-#: ../src/moblin-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:444
 msgid "pasteboard"
 msgstr "لوح اللصق"
 

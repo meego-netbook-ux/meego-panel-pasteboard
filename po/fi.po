@@ -14,39 +14,39 @@ msgstr ""
 "X-Poedit-Language: Finnish\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Kopioi"
 
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "nykyinen valinta liitepöytään"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "valintasi"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "Liitepöytä"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "Etsi"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Kopioi jotain tekstiä, jotta voisit käyttää liitepöytää"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Tyhjennä liitepöytä"
 
-#: ../src/moblin-panel-pasteboard.c:444
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "liitepöytä"
 
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Taittopöydän paneeli"

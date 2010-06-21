@@ -15,7 +15,7 @@ dist_theme_DATA = \
 	search-entry-clear.png \
 	search-entry-separator.png
 
-# Manage mutter-moblin's texture cache.
+# Manage mutter-meego's texture cache.
 
 if ENABLE_CACHE
 texture_cache = $(DESTDIR)$(pkgdatadir)/mx.cache

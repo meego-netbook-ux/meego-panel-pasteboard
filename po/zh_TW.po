@@ -17,41 +17,41 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 
 #: ../src/mnb-clipboard-item.c:247
-#: ../src/moblin-panel-pasteboard.c:340
+#: ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "複製"
 
-#: ../src/moblin-panel-pasteboard.c:140
-#: ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140
+#: ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "目前給剪貼簿的選取"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "你的選取"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "剪貼簿"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "搜尋"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "你需要複製一些文字才能使用剪貼簿"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "清除剪貼簿"
 
-#: ../src/moblin-panel-pasteboard.c:444
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "剪貼簿"
 
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "剪貼簿面板"
 

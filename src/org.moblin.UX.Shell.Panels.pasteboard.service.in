@@ -1,4 +1,4 @@
 [D-BUS Service]
-Name=org.moblin.UX.Shell.Panels.pasteboard
-Exec=@libexecdir@/moblin-panel-pasteboard
+Name=org.meego.UX.Shell.Panels.pasteboard
+Exec=@libexecdir@/meego-panel-pasteboard
 

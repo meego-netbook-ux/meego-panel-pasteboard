@@ -19,41 +19,41 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../src/mnb-clipboard-item.c:247
-#: ../src/moblin-panel-pasteboard.c:340
+#: ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Копировать"
 
-#: ../src/moblin-panel-pasteboard.c:140
-#: ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140
+#: ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "выделенное в буфер обмена"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "ваш выбор"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "Буфер обмена"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "Поиск"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Для того, чтобы пользоваться буфером обмена, необходимо скопировать какой-нибудь текст"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Очистить буфер обмена"
 
-#: ../src/moblin-panel-pasteboard.c:444
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "буфер обмена"
 
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Панель буфера обмена"
 

@@ -1,10 +1,10 @@
-# Translation of moblin-panel-pasteboard into Indonesian.
+# Translation of meego-panel-pasteboard into Indonesian.
 # Copyright (C) 2009 Intel Corp
 # This file is distributed under the same license as the PACKAGE package.
 # Andika Triwidada <andika@gmail.com>, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: moblin-panel-pasteboard\n"
+"Project-Id-Version: meego-panel-pasteboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-02-26 03:48+0000\n"
 "PO-Revision-Date: 2009-08-26 08:25+0700\n"
@@ -14,39 +14,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/mnb-clipboard-item.c:247 ../src/moblin-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
 msgstr "Salin"
 
-#: ../src/moblin-panel-pasteboard.c:140 ../src/moblin-panel-pasteboard.c:355
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
 msgstr "pilihan kini ke papan tempel"
 
-#: ../src/moblin-panel-pasteboard.c:145
+#: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
 msgstr "pilihan anda"
 
-#: ../src/moblin-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
 msgstr "Papan tempel"
 
-#: ../src/moblin-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
 msgstr "Cari"
 
-#: ../src/moblin-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Anda perlu menyalin sekumpulan teks untuk memakai Papan tempel"
 
-#: ../src/moblin-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
 msgstr "Hapus papan tempel"
 
-#: ../src/moblin-panel-pasteboard.c:444
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:2
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "papan tempel"
 
-#: ../data/moblin-panel-pasteboard.desktop.in.in.h:1
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Panel papan tempel"
