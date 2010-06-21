@@ -22,8 +22,8 @@ meego_panel_pasteboard_SOURCES = 	\
 	meego-panel-pasteboard.c
 
 servicedir = $(datadir)/dbus-1/services
-service_in_files = org.meego.UX.Shell.Panels.pasteboard.service.in
-service_DATA = org.meego.UX.Shell.Panels.pasteboard.service
+service_in_files = com.meego.UX.Shell.Panels.pasteboard.service.in
+service_DATA = com.meego.UX.Shell.Panels.pasteboard.service
 
 BUILT_SOURCES = \
 	mnb-pasteboard-marshal.c \
@@ -34,13 +34,13 @@ CLEANFILES = \
 	stamp-mnb-pasteboard-marshal.h
 
 DISTCLEANFILES = \
-	org.meego.UX.Shell.Panels.pasteboard.service
+	com.meego.UX.Shell.Panels.pasteboard.service
 
 EXTRA_DIST = \
 	$(service_in_files) \
 	mnb-pasteboard-marshal.list
 
-org.meego.UX.Shell.Panels.pasteboard.service: org.meego.UX.Shell.Panels.pasteboard.service.in $(top_builddir)/config.log
+com.meego.UX.Shell.Panels.pasteboard.service: com.meego.UX.Shell.Panels.pasteboard.service.in $(top_builddir)/config.log
 	$(QUIET_GEN)sed -e "s|\@libexecdir\@|$(libexecdir)|" $< > $@
 
 mnb-pasteboard-marshal.h: stamp-mnb-pasteboard-marshal.h

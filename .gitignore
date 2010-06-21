@@ -35,8 +35,8 @@ xmldocs.make
 
 src/mnb-pasteboard-marshal.c
 src/mnb-pasteboard-marshal.h
-src/moblin-panel-pasteboard
-src/org.moblin.UX.Shell.Panels.pasteboard.service
+src/meego-panel-pasteboard
+src/com.meego.UX.Shell.Panels.pasteboard.service
 src/stamp-mnb-pasteboard-marshal.h
 
 
