@@ -23,7 +23,7 @@ AM_PROG_CC_C_O
 
 CFLAGS="$CFLAGS -Wall"
 
-PKG_CHECK_MODULES(MPL, meego-panel >= 0.50.0)
+PKG_CHECK_MODULES(MPL, meego-panel >= 0.76.0)
 
 MEEGO_PANELS_DIR=`$PKG_CONFIG --variable=meego_panel_panels_dir meego-panel`
 AC_SUBST(MEEGO_PANELS_DIR)
