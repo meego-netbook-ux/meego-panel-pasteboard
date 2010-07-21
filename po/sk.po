@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Tomáš Virgl <tomas@virgl.net>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-pasteboard.master\n"
@@ -17,19 +17,19 @@ msgstr ""
 
 #: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
-msgstr ""
+msgstr "Kopírovať"
 
 #: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
-msgstr ""
+msgstr "momentálny výber do schránky"
 
 #: ../src/meego-panel-pasteboard.c:145
 msgid "your selection"
-msgstr ""
+msgstr "váš výber"
 
 #: ../src/meego-panel-pasteboard.c:210
 msgid "Pasteboard"
-msgstr ""
+msgstr "Schránka"
 
 #: ../src/meego-panel-pasteboard.c:223
 msgid "Search"
@@ -37,17 +37,17 @@ msgstr "Hľadať"
 
 #: ../src/meego-panel-pasteboard.c:258
 msgid "You need to copy some text to use Pasteboard"
-msgstr ""
+msgstr "Aby ste mohli používať schránku, musíte najprv skopírovať nejaký text"
 
 #: ../src/meego-panel-pasteboard.c:312
 msgid "Clear pasteboard"
-msgstr ""
+msgstr "Vyprázdniť schránku"
 
 #: ../src/meego-panel-pasteboard.c:444
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
-msgstr ""
+msgstr "schránka"
 
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
-msgstr ""
+msgstr "Panel Schránka"
