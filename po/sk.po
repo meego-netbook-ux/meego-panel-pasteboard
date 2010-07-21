@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Tomáš Virgl <tomas@virgl.net>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: meego-panel-pasteboard.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 17:43+0000\n"
+"PO-Revision-Date: 2010-07-21 17:43+0000\n"
+"Last-Translator: Tomáš Virgl <tomas@virgl.net>\n"
+"Language-Team: slovak <sk-i18n@lists.linux.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
+msgid "Copy"
+msgstr ""
+
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
+msgid "the current selection to pasteboard"
+msgstr ""
+
+#: ../src/meego-panel-pasteboard.c:145
+msgid "your selection"
+msgstr ""
+
+#: ../src/meego-panel-pasteboard.c:210
+msgid "Pasteboard"
+msgstr ""
+
+#: ../src/meego-panel-pasteboard.c:223
+msgid "Search"
+msgstr "Hľadať"
+
+#: ../src/meego-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr ""
+
+#: ../src/meego-panel-pasteboard.c:312
+msgid "Clear pasteboard"
+msgstr ""
+
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
+msgid "pasteboard"
+msgstr ""
+
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr ""
