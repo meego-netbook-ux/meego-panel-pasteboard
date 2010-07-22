@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Toni Hermoso Pulido <toniher@softcatala.cat>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 17:43+0000\n"
+"PO-Revision-Date: 2010-07-21 18:57-0700\n"
+"Last-Translator: Toni Hermoso Pulido <toniher@softcatala.cat>\n"
+"Language-Team: Softcatalà\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
+msgid "Copy"
+msgstr "Copia"
+
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
+msgid "the current selection to pasteboard"
+msgstr "la selecció actual al portaretalls"
+
+#: ../src/meego-panel-pasteboard.c:145
+msgid "your selection"
+msgstr "la vostra selecció"
+
+#: ../src/meego-panel-pasteboard.c:210
+msgid "Pasteboard"
+msgstr "Portaretalls"
+
+#: ../src/meego-panel-pasteboard.c:223
+msgid "Search"
+msgstr "Cerca"
+
+#: ../src/meego-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "Cal que copieu algun text per poder utilitzar el portaretalls"
+
+#: ../src/meego-panel-pasteboard.c:312
+msgid "Clear pasteboard"
+msgstr "Neteja el portaretalls"
+
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
+msgid "pasteboard"
+msgstr "Portaretalls"
+
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr "Tauler del portaretalls"
