@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 17:43+0000\n"
+"PO-Revision-Date: 2010-08-12 02:46+0330\n"
+"Last-Translator: Mostafa <info@mostafadaneshvar.com>\n"
+"Language-Team: Persian <trans-fa@fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: Iran\n"
+
+#: ../src/mnb-clipboard-item.c:247
+#: ../src/meego-panel-pasteboard.c:340
+msgid "Copy"
+msgstr "کپ"
+
+#: ../src/meego-panel-pasteboard.c:140
+#: ../src/meego-panel-pasteboard.c:355
+msgid "the current selection to pasteboard"
+msgstr "انتخاب کنونی برای پیست‌برد"
+
+#: ../src/meego-panel-pasteboard.c:145
+msgid "your selection"
+msgstr "انتخاب شما"
+
+#: ../src/meego-panel-pasteboard.c:210
+msgid "Pasteboard"
+msgstr "پیست‌برد"
+
+#: ../src/meego-panel-pasteboard.c:223
+msgid "Search"
+msgstr "جستجو"
+
+#: ../src/meego-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "شما برای استفاده از پیست‌برد باید مقداری متن کپی کنید"
+
+#: ../src/meego-panel-pasteboard.c:312
+msgid "Clear pasteboard"
+msgstr "پاک سازی پیست‌برد"
+
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
+msgid "pasteboard"
+msgstr "پیست‌برد"
+
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr "قاب پیست‌برد"
+
