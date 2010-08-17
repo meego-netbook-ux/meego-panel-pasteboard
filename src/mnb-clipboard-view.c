@@ -236,7 +236,6 @@ mnb_clipboard_view_paint (ClutterActor *actor)
   box_b.y1 = y;
 
   children = clutter_container_get_children (CLUTTER_CONTAINER (actor));
-  children = g_list_reverse (children);
   for (l = children; l != NULL; l = l->next)
     {
       ClutterActor *child = l->data;
