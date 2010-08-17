@@ -71,7 +71,7 @@ mnb_clipboard_item_enter (ClutterActor *actor,
 
   mx_stylable_set_style_pseudo_class (MX_STYLABLE (actor), "hover");
 
-  clutter_actor_show (item->remove_button);
+  clutter_actor_set_opacity (item->remove_button, 0xff);
 
   return TRUE;
 }
@@ -84,7 +84,7 @@ mnb_clipboard_item_leave (ClutterActor *actor,
 
   mx_stylable_set_style_pseudo_class (MX_STYLABLE (actor), "hover");
 
-  clutter_actor_hide (item->remove_button);
+  clutter_actor_set_opacity (item->remove_button, 0x00);
 
   return TRUE;
 }
@@ -215,18 +215,18 @@ mnb_clipboard_item_init (MnbClipboardItem *self)
   mx_stylable_set_style_class (MX_STYLABLE (self->remove_button),
                                     "MnbClipboardItemDeleteButton");
   clutter_actor_set_reactive (self->remove_button, TRUE);
-  clutter_actor_hide (self->remove_button);
+  clutter_actor_set_opacity (self->remove_button, 0x00);
   g_signal_connect (self->remove_button, "clicked",
                     G_CALLBACK (on_remove_clicked),
                     self);
   mx_table_add_actor_with_properties (table, self->remove_button,
                                         0, 1,
                                         "x-expand", FALSE,
-                                        "y-expand", TRUE,
+                                        "y-expand", FALSE,
                                         "x-fill", FALSE,
-                                        "y-fill", TRUE,
+                                        "y-fill", FALSE,
                                         "x-align", MX_ALIGN_START,
-                                        "y-align", MX_ALIGN_START,
+                                        "y-align", MX_ALIGN_MIDDLE,
                                         "row-span", 2,
                                         NULL);
 
