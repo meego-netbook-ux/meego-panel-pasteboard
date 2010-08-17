@@ -137,14 +137,12 @@ on_selection_changed (MnbClipboardStore *store,
                       MxLabel         *label)
 {
   if (current_selection == NULL || *current_selection == '\0')
-    mx_label_set_text (label, _("the current selection to pasteboard"));
+    mx_label_set_text (label, _("Nothing selected"));
   else
     {
       gchar *text;
 
-      text = g_strconcat (_("your selection"),
-                          " \"", current_selection, "\"",
-                          NULL);
+      text = g_strdup_printf ("\"%s\"");
       mx_label_set_text (label, text);
 
       g_free (text);
@@ -313,10 +311,10 @@ make_pasteboard (gint           width,
   mx_table_add_actor_with_properties (MX_TABLE (bin),
                                         CLUTTER_ACTOR (button),
                                         0, 0,
-                                        "x-expand", FALSE,
-                                        "y-expand", FALSE,
-                                        "x-fill", FALSE,
-                                        "y-fill", FALSE,
+                                        "x-expand", TRUE,
+                                        "y-expand", TRUE,
+                                        "x-fill", TRUE,
+                                        "y-fill", TRUE,
                                         "x-align", MX_ALIGN_START,
                                         "y-align", MX_ALIGN_START,
                                         NULL);
@@ -324,10 +322,9 @@ make_pasteboard (gint           width,
                     G_CALLBACK (on_clear_clicked),
                     NULL);
 
-  hbox = mx_table_new ();
-  mx_table_set_column_spacing (MX_TABLE (hbox), 6);
+  button = mx_button_new_with_label (_("Copy selection to pasteboard"));
   mx_table_add_actor_with_properties (MX_TABLE (bin),
-                                        CLUTTER_ACTOR (hbox),
+                                        CLUTTER_ACTOR (button),
                                         1, 0,
                                         "x-expand", TRUE,
                                         "y-expand", TRUE,
@@ -336,31 +333,19 @@ make_pasteboard (gint           width,
                                         "x-align", MX_ALIGN_START,
                                         "y-align", MX_ALIGN_START,
                                         NULL);
-
-  button = mx_button_new_with_label (_("Copy"));
-  mx_table_add_actor_with_properties (MX_TABLE (hbox),
-                                        CLUTTER_ACTOR (button),
-                                        0, 0,
-                                        "x-expand", FALSE,
-                                        "y-expand", FALSE,
-                                        "x-fill", FALSE,
-                                        "y-fill", FALSE,
-                                        "x-align", MX_ALIGN_START,
-                                        "y-align", MX_ALIGN_START,
-                                        NULL);
   g_signal_connect (button, "clicked",
                     G_CALLBACK (on_selection_copy_clicked),
                     store);
 
-  label = mx_label_new_with_text (_("the current selection to pasteboard"));
+  label = mx_label_new_with_text (_("Nothing selected"));
   text = CLUTTER_TEXT (mx_label_get_clutter_text (MX_LABEL (label)));
   clutter_text_set_single_line_mode (text, FALSE);
   clutter_text_set_line_wrap (text, TRUE);
   clutter_text_set_line_wrap_mode (text, PANGO_WRAP_WORD_CHAR);
   clutter_text_set_ellipsize (text, PANGO_ELLIPSIZE_END);
-  mx_table_add_actor_with_properties (MX_TABLE (hbox),
+  mx_table_add_actor_with_properties (MX_TABLE (bin),
                                         CLUTTER_ACTOR (label),
-                                        0, 1,
+                                        2, 0,
                                         "x-expand", TRUE,
                                         "y-expand", FALSE,
                                         "x-fill", TRUE,
@@ -372,6 +357,7 @@ make_pasteboard (gint           width,
   g_signal_connect (store, "selection-changed",
                     G_CALLBACK (on_selection_changed),
                     label);
+
 
   return CLUTTER_ACTOR (vbox);
 }
