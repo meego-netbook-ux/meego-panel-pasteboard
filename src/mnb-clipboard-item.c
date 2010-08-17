@@ -244,7 +244,9 @@ mnb_clipboard_item_init (MnbClipboardItem *self)
   g_free (remove_icon_path);
 
   self->action_button = CLUTTER_ACTOR (mx_button_new ());
-  mx_button_set_label (MX_BUTTON (self->action_button), _("Copy"));
+  mx_button_set_label (MX_BUTTON (self->action_button), 
+                       C_("Used to form '*Copy* from pasteboard'",
+                          "Copy"));
   mx_stylable_set_style_class (MX_STYLABLE (self->action_button),
                                     "MnbClipboardItemCopyButton");
   clutter_actor_set_reactive (self->action_button, TRUE);
