@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 17:43+0000\n"
+"PO-Revision-Date: 2010-08-21 13:34+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Gezer (Hebrew)\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+
+#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
+msgid "Copy"
+msgstr "העתקה"
+
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
+msgid "the current selection to pasteboard"
+msgstr "הבחירה הנוכחית ללוח הגזירים"
+
+#: ../src/meego-panel-pasteboard.c:145
+msgid "your selection"
+msgstr "הבחירה שלך"
+
+#: ../src/meego-panel-pasteboard.c:210
+msgid "Pasteboard"
+msgstr "לוח הגזירים"
+
+#: ../src/meego-panel-pasteboard.c:223
+msgid "Search"
+msgstr "חיפוש"
+
+#: ../src/meego-panel-pasteboard.c:258
+msgid "You need to copy some text to use Pasteboard"
+msgstr "עליך להעתיק קצת טקסט כדי להשתמש בלוח הגזירים"
+
+#: ../src/meego-panel-pasteboard.c:312
+msgid "Clear pasteboard"
+msgstr "פינוי לוח הגזירים"
+
+#: ../src/meego-panel-pasteboard.c:444
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:2
+msgid "pasteboard"
+msgstr "לוח הגזירים"
+
+#: ../data/meego-panel-pasteboard.desktop.in.in.h:1
+msgid "Pasteboard panel"
+msgstr "סרגל לוח הגזירים"
