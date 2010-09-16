@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
 msgid "Copy"
-msgstr "Másol"
+msgstr "Másolás"
 
 #: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
 msgid "the current selection to pasteboard"
@@ -53,4 +53,4 @@ msgstr "vágólap"
 
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
-msgstr "Vágólap"
+msgstr "Vágólap panel"
