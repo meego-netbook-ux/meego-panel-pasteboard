@@ -1,10 +1,9 @@
-#
 # Pavel, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-29 17:05+0000\n"
+"POT-Creation-Date: 2010-10-23 22:25+0000\n"
 "PO-Revision-Date: 2010-07-06 10:42+0200\n"
 "Last-Translator: Pavel\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -17,36 +16,36 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 
 # assuming this is the text in the button...
-#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:249
+msgctxt "Used to form '*Copy* from pasteboard'"
 msgid "Copy"
 msgstr "Kopírovat"
 
-#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
-msgid "the current selection to pasteboard"
-msgstr "Nynější výběr do schránky"
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:340
+msgid "Nothing selected"
+msgstr "Nic není vybráno"
 
-#: ../src/meego-panel-pasteboard.c:145
-msgid "your selection"
-msgstr "Váš výběr"
-
-#: ../src/meego-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:208
 msgid "Pasteboard"
 msgstr "Schránka"
 
-#: ../src/meego-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:221
 msgid "Search"
 msgstr "Hledat"
 
-#: ../src/meego-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:256
 msgid "You need to copy some text to use Pasteboard"
-msgstr ""
-"Abyste mohl používat schránku, musíte nejprve zkopírovat nějaký text"
+msgstr "Abyste mohl používat schránku, musíte nejprve zkopírovat nějaký text"
 
-#: ../src/meego-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:310
 msgid "Clear pasteboard"
 msgstr "Vyprázdnit schránku"
 
-#: ../src/meego-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:325
+msgid "Copy selection to pasteboard"
+msgstr "Kopírovat výběr do schránky"
+
+#: ../src/meego-panel-pasteboard.c:430
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "Schránka"
@@ -55,3 +54,5 @@ msgstr "Schránka"
 msgid "Pasteboard panel"
 msgstr "Panel Schránka"
 
+#~ msgid "your selection"
+#~ msgstr "Váš výběr"
