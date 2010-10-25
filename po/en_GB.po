@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meego-panel-pasteboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 17:43+0000\n"
-"PO-Revision-Date: 2010-07-20 10:46-0800\n"
+"POT-Creation-Date: 2010-10-23 22:25+0000\n"
+"PO-Revision-Date: 2010-10-25 15:50-0800\n"
 "Last-Translator: Margie Foster <margie@linux.intel.com>\n"
 "Language-Team: British English <margie@linux.intel.com>\n"
 "MIME-Version: 1.0\n"
@@ -19,37 +19,37 @@ msgstr ""
 "X-Poedit-Country: UNITED KINGDOM\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../src/mnb-clipboard-item.c:247
-#: ../src/meego-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:249
+msgctxt "Used to form '*Copy* from pasteboard'"
 msgid "Copy"
 msgstr "Copy"
 
 #: ../src/meego-panel-pasteboard.c:140
-#: ../src/meego-panel-pasteboard.c:355
-msgid "the current selection to pasteboard"
-msgstr "the current selection to pasteboard"
+#: ../src/meego-panel-pasteboard.c:340
+msgid "Nothing selected"
+msgstr "Nothing selected"
 
-#: ../src/meego-panel-pasteboard.c:145
-msgid "your selection"
-msgstr "your selection"
-
-#: ../src/meego-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:208
 msgid "Pasteboard"
 msgstr "Pasteboard"
 
-#: ../src/meego-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:221
 msgid "Search"
 msgstr "Search"
 
-#: ../src/meego-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:256
 msgid "You need to copy some text to use Pasteboard"
 msgstr "You need to copy some text to use Pasteboard"
 
-#: ../src/meego-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:310
 msgid "Clear pasteboard"
 msgstr "Clear pasteboard"
 
-#: ../src/meego-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:325
+msgid "Copy selection to pasteboard"
+msgstr "Copy selection to pasteboard"
+
+#: ../src/meego-panel-pasteboard.c:430
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "pasteboard"
@@ -58,3 +58,5 @@ msgstr "pasteboard"
 msgid "Pasteboard panel"
 msgstr "Pasteboard panel"
 
+#~ msgid "your selection"
+#~ msgstr "your selection"
