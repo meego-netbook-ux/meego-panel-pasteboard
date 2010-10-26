@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Meego UX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-29 17:05+0000\n"
+"POT-Creation-Date: 2010-10-23 22:25+0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: astur <malditoastur@gmail.com>\n"
+"Last-Translator: Iñigo Varela <ivarela@softastur.org>\n"
 "Language-Team: softastur <alministradores@softastur.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,41 +13,41 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../src/mnb-clipboard-item.c:247
-#: ../src/meego-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:249
+msgctxt "Used to form '*Copy* from pasteboard'"
 msgid "Copy"
 msgstr "Copiar"
 
 #: ../src/meego-panel-pasteboard.c:140
-#: ../src/meego-panel-pasteboard.c:355
-msgid "the current selection to pasteboard"
-msgstr "la seleición actual al borradodr"
+#: ../src/meego-panel-pasteboard.c:340
+msgid "Nothing selected"
+msgstr "Nada esbillao"
 
-#: ../src/meego-panel-pasteboard.c:145
-msgid "your selection"
-msgstr "la to seleición"
-
-#: ../src/meego-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:208
 msgid "Pasteboard"
 msgstr "Borrador"
 
-#: ../src/meego-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:221
 msgid "Search"
 msgstr "Guetar"
 
 # you have to copy some text to be able to paste it in the pasteboard
-#: ../src/meego-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:256
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Tienes que copiar dalgún testu pa poder apegalu nel borrador"
 
 # clean the pasteboard
-#: ../src/meego-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:310
 msgid "Clear pasteboard"
 msgstr "Llimpiar el borrador"
 
+#: ../src/meego-panel-pasteboard.c:325
+msgid "Copy selection to pasteboard"
+msgstr "Copiar la seleición actual al borrador"
+
 # <not sure about this. sent question to developers>
 # draft
-#: ../src/meego-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:430
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "borrador"
@@ -55,4 +55,7 @@ msgstr "borrador"
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Panel Borrador"
+
+#~ msgid "your selection"
+#~ msgstr "la to seleición"
 
