@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-pasteboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-26 03:48+0000\n"
+"POT-Creation-Date: 2010-11-03 00:13+0000\n"
 "PO-Revision-Date: 2009-08-26 08:25+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
@@ -14,35 +14,36 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:249
+msgctxt "Used to form '*Copy* from pasteboard'"
 msgid "Copy"
 msgstr "Salin"
 
-#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
-msgid "the current selection to pasteboard"
-msgstr "pilihan kini ke papan tempel"
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:340
+msgid "Nothing selected"
+msgstr "Tak ada yang dipilih"
 
-#: ../src/meego-panel-pasteboard.c:145
-msgid "your selection"
-msgstr "pilihan anda"
-
-#: ../src/meego-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:208
 msgid "Pasteboard"
 msgstr "Papan tempel"
 
-#: ../src/meego-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:221
 msgid "Search"
 msgstr "Cari"
 
-#: ../src/meego-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:256
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Anda perlu menyalin sekumpulan teks untuk memakai Papan tempel"
 
-#: ../src/meego-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:310
 msgid "Clear pasteboard"
 msgstr "Hapus papan tempel"
 
-#: ../src/meego-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:325
+msgid "Copy selection to pasteboard"
+msgstr "Salin pilihan ke papan tempel"
+
+#: ../src/meego-panel-pasteboard.c:430
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "papan tempel"
@@ -50,3 +51,6 @@ msgstr "papan tempel"
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Panel papan tempel"
+
+#~ msgid "your selection"
+#~ msgstr "pilihan anda"
