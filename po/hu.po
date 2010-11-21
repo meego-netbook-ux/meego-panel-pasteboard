@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-pasteboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 17:43+0000\n"
+"POT-Creation-Date: 2010-11-21 00:05+0000\n"
 "PO-Revision-Date: 2010-01-22 12:08+0100\n"
 "Last-Translator: Gergely Lónyai <aleph@mandriva.org>\n"
 "Language-Team: Hungarian <aleph@mandriva.org>\n"
@@ -18,35 +18,36 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Country: HUNGARY\n"
 
-#: ../src/mnb-clipboard-item.c:247 ../src/meego-panel-pasteboard.c:340
+#: ../src/mnb-clipboard-item.c:249
+msgctxt "Used to form '*Copy* from pasteboard'"
 msgid "Copy"
 msgstr "Másolás"
 
-#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:355
-msgid "the current selection to pasteboard"
-msgstr "a kijelöléshez a vágólapra"
+#: ../src/meego-panel-pasteboard.c:140 ../src/meego-panel-pasteboard.c:340
+msgid "Nothing selected"
+msgstr "Nincs kijelölés"
 
-#: ../src/meego-panel-pasteboard.c:145
-msgid "your selection"
-msgstr "kiválasztás"
-
-#: ../src/meego-panel-pasteboard.c:210
+#: ../src/meego-panel-pasteboard.c:208
 msgid "Pasteboard"
 msgstr "Vágólap"
 
-#: ../src/meego-panel-pasteboard.c:223
+#: ../src/meego-panel-pasteboard.c:221
 msgid "Search"
 msgstr "Keresés"
 
-#: ../src/meego-panel-pasteboard.c:258
+#: ../src/meego-panel-pasteboard.c:256
 msgid "You need to copy some text to use Pasteboard"
 msgstr "Másolnod kell a szöveget, ha szeretnéd használni a vágólapot."
 
-#: ../src/meego-panel-pasteboard.c:312
+#: ../src/meego-panel-pasteboard.c:310
 msgid "Clear pasteboard"
 msgstr "Vágólap ürítése"
 
-#: ../src/meego-panel-pasteboard.c:444
+#: ../src/meego-panel-pasteboard.c:325
+msgid "Copy selection to pasteboard"
+msgstr "A kijelölés másolása a vágólapra"
+
+#: ../src/meego-panel-pasteboard.c:430
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:2
 msgid "pasteboard"
 msgstr "vágólap"
@@ -54,3 +55,6 @@ msgstr "vágólap"
 #: ../data/meego-panel-pasteboard.desktop.in.in.h:1
 msgid "Pasteboard panel"
 msgstr "Vágólap panel"
+
+#~ msgid "your selection"
+#~ msgstr "kiválasztás"
