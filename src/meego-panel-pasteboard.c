@@ -142,7 +142,7 @@ on_selection_changed (MnbClipboardStore *store,
     {
       gchar *text;
 
-      text = g_strdup_printf ("\"%s\"");
+      text = g_strdup_printf ("\"%s\"", current_selection);
       mx_label_set_text (label, text);
 
       g_free (text);
